@@ -40,7 +40,7 @@ public class BallController : MonoBehaviour {
 		} else if (yourtag == "SmallCloudTag") {
 			score += 20;
 		} else if (yourtag == "LargeStarTag") {
-			score += 15;
+			score += 30;
 		} else if (yourtag == "SmallStarTag") {
 			score += 5;
 		}
