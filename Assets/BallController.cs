@@ -29,7 +29,7 @@ public class BallController : MonoBehaviour {
 			//GameoverTextにゲームオーバを表示
 			this.gameoverText.GetComponent<Text> ().text = "Game Over";
 			string scoretext = score.ToString ();
-			this.ScoreText.GetComponent<Text> ().text = "あなたのスコア:"+scoretext;
+			this.ScoreText.GetComponent<Text> ().text = "Score:"+scoretext;
 		}
 	}
 	void OnCollisionEnter (Collision collision)
@@ -43,6 +43,7 @@ public class BallController : MonoBehaviour {
 			score += 30;
 		} else if (yourtag == "SmallStarTag") {
 			score += 5;
+
 		}
 	}
 
